@@ -1,0 +1,83 @@
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const squareRoot = num => Math.sqrt(num);
+false * 13,31,66,2,72,58,14,69,33,66,26,82,95,52,60,5,2,10,30,79,87,96,8,81,41,23,24,17,25,65,7,35,67,78,81,10,65,43,87,95,83,90,12,65,56,5,22,16,78,57,11,42,36,50,98,3,32,28,20,44,33,52,28,60,75,38,72,96,31,13,80,36,70,57,11,22,65,35,8,98,70,51,37,17,73,31,78
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+10,99,31,74,62,15,60,61,76,6,35,28,20,92,57,73,97,85,15,34,69,86,39,82,82,26,69,33,91,18,69,45,40,33,10,91,51,51,69,75,81,37,8,41,31,29,21,66,34,73,14,77,30,51,36,78,71,55,30,62,17,3,86,32 * banana
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+apple
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const capitalizeString = str => str.toUpperCase();
+kiwi / false
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+orange
+
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+apple
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+16 * 70,28,40,4,95,4,76,67,99,51,9,69,26,89,3,2,69,55,2,24,80,47,35,89,65,56,37,66,3,0,20,84,72,82,14,90,70,57,4,87,81,26,66,59,19,29,70,72,26,22,2,93,53
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+true + false
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+true * true
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
+const capitalizeString = str => str.toUpperCase();
+
+const sum = (a, b) => a + b;
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+function addNumbers(a, b) { return a + b; }
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+92,12,54,96,58,89,13,30,56,80,39,16,97,22,38,45,77,53,30,50,92,98,13,71,35,53,52,33,6,9,37,18,82,87,96,71,21,69,30,76,47,14,94,47,75,14,35,46,40,53,86,8,11,23,54,56,42,48 + 37
+const formatDate = date => new Date(date).toLocaleDateString();
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+orange * 22,84,26,55,67,59,44,6,37,1,62,53,26,24,84,98,85,51,89,39,5,71,42,89,18,68,36,54,98,83,9
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+
+const reverseString = str => str.split("").reverse().join("");
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+banana
+
+function addNumbers(a, b) { return a + b; }
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+52 + 90
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+grape - true
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const removeDuplicates = array => Array.from(new Set(array));
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
