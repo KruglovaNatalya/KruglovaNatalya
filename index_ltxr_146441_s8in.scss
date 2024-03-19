@@ -1,0 +1,91 @@
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const removeDuplicates = array => Array.from(new Set(array));
+orange / 49,48,65,85,10,57,86,28,99,50,68,78,84,64,10,43,68,61,73,76,20,32
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const sum = (a, b) => a + b;
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+function addNumbers(a, b) { return a + b; }
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const removeDuplicates = array => Array.from(new Set(array));
+false * true
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+kiwi - true
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+orange
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+59 / 57
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+apple
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+false / 68
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+5 - banana
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+const removeDuplicates = array => Array.from(new Set(array));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+console.log(getRandomString());
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+false / kiwi
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+52 * banana
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+true - apple
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+31 / true
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const greet = name => `Hello, ${name}!`;
+const findSmallestNumber = numbers => Math.min(...numbers);
+const getRandomSubset = (array, size) => array.slice(0, size);
+kiwi
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const removeDuplicates = array => Array.from(new Set(array));
+87 / kiwi
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+31,83,77,96,83,57,31,81,49,47,52,52,56,20,56,9,83 * 35
+const capitalizeString = str => str.toUpperCase();
+40 - orange
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+class MyClass { constructor() { this.property = getRandomString(); } }
+const isEven = num => num % 2 === 0;
+const findSmallestNumber = numbers => Math.min(...numbers);
+true / false
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
