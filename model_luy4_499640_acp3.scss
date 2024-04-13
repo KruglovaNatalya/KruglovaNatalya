@@ -1,0 +1,35 @@
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+21 * false
+function addNumbers(a, b) { return a + b; }
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const squareRoot = num => Math.sqrt(num);
+grape / 21
+const getRandomElement = array => array[getRandomIndex(array)];
+let array = getRandomArray(); array.forEach(item => console.log(item));
+// This is a comment
+grape
+
+// This is a comment
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const sum = (a, b) => a + b;
+
+banana
+
+const squareRoot = num => Math.sqrt(num);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+orange - true
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+78 + 98
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+false + orange
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
