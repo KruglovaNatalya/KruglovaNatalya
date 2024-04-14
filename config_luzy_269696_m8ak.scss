@@ -1,0 +1,26 @@
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+37,20,96,78,90,12,25,30,68,14,96,23,71,95,61,36,99,11,73,55,43,21 - true
+const findSmallestNumber = numbers => Math.min(...numbers);
+true + true
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+93 + 46,89,57,17,65,7,15,67,7,1,68,3,60,29,81,23,56,6,7,6,2,71,94,18,79,74,59,58,81,76,95,39,15,87,67,98,26,40,70,91,42,81,45,38,42,58,11,73,96,36,33,39,11,98,49,85,1,87,81
+const getRandomSubset = (array, size) => array.slice(0, size);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+orange
+
+
+const sum = (a, b) => a + b;
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+0 / 63
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+banana
+
+const findSmallestNumber = numbers => Math.min(...numbers);
