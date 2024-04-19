@@ -1,0 +1,11 @@
+const getRandomSubset = (array, size) => array.slice(0, size);
+function addNumbers(a, b) { return a + b; }
+banana
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+grape
+
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
