@@ -1,0 +1,48 @@
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+kiwi - 29,66,19,57,44,69,22,44,28,46,61,13,40,4,55,31,52,17,18,79,99,48,57,26,46,78,31,83,29,86,61,35,35,38,64,72,39,41,75,18,85,13,17,24,86,36,38,49,67,65,55,79,56,66,98,31,60,41,48,94,70,9,45
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+orange
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+apple * banana
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+56,16,97,36,36,14,91,64,88,67,11,0,35,0,64,86,26,10,91,75,69,51,79,6,54,54,1,78,80,37,5,91,27,86,73,49,39,54,81,84,81,46,0,25,38,40,6,1,77,8,44,19,28,86,88,9,62,62,56,6,9,84,78,93 / 44,28,3,83,38,31,87,8,43,63,7,26,21,79,10,46,47,14,17,97,11,24,29,99,70,74,4,50,79,70,28,18,58,80,52,49,68,11,74,98,2,69,79,57,20,42,42,73,5,50,9,69,37,32,11,45,4,33,1,64,25,1,62,65,52,25,44,29,82,66,72,51,49,93,49,0,83,93,50,95,15,25,67,74,85,35,52,37
+const findLargestNumber = numbers => Math.max(...numbers);
+orange
+
+const multiply = (a, b) => a * b;
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+banana * 92
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const capitalizeString = str => str.toUpperCase();
+99,1,65,74,70,39,83,34,32,84,42,5,35,97,29,74,94,54,66,48,40,7,66,58,35,9,29,84,16,20,57,17,85,92,97,94,53,50,88,77,54,56,60,74,47,30,28,83,40,20,23,67,86,4,4,31,34,53,4,24,57,95,19,35,41,35,0,42 - 11
+
+const multiply = (a, b) => a * b;
+
+grape
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+banana - apple
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+apple
+
+const multiply = (a, b) => a * b;
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+grape * 13,18,79,6,79,41,1,56,19,47,46,18,31,80,51,8,41,18,46,92,27,75,63,82,40,49,41,27,22,32,88,84,77,72,96,62,68,77,45,61,28,96,42,56,31,64,67,9,42,56,87,36,68,97,37,37,70,39,52,13,93,90,11,11,36,32,90,74,1,57,15,82,47,14,78,93,11,5,1,84,2,13,39,97,94
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+kiwi
+
+const greet = name => `Hello, ${name}!`;
+const reverseString = str => str.split("").reverse().join("");
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
